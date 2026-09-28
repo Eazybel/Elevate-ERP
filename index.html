@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS ERP — System Maintenance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        corporate: {
+                            50: '#f8fafc',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background enterprise glowing visual effect -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-indigo-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/10 blur-[140px] rounded-full pointer-events-none"></div>
+
+    <!-- Header / Nav -->
+    <header class="w-full py-6 px-6 sm:px-12 flex justify-between items-center max-w-7xl mx-auto z-10">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-blue-500 flex items-center justify-center shadow-lg shadow-indigo-950 text-white font-bold text-lg">
+                <i class="fa-solid fa-users-gear text-sm"></i>
+            </div>
+            <div>
+                <span class="text-xl font-bold tracking-tight text-white">Enterprise HRMS</span>
+                <span class="text-[10px] block text-indigo-400 font-semibold tracking-widest uppercase">ERP Core Module</span>
+            </div>
+        </div>
+        <div>
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                Scheduled Maintenance
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-6 py-12 z-10">
+        <div class="max-w-2xl w-full text-center">
+            
+            <!-- Icon badge -->
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-slate-900/90 border border-slate-800 text-indigo-400 mb-8 shadow-2xl shadow-indigo-500/10">
+                <i class="fa-solid fa-server text-3xl animate-pulse"></i>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
+                Optimizing Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-300">Workforce Platform</span>
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg mb-10 leading-relaxed max-w-xl mx-auto">
+                Our HR Management ERP is undergoing routine database optimization, payroll security enhancement, and infrastructure scaling.
+            </p>
+
+            <!-- Status Card / Details Box -->
+            <div class="bg-slate-900/70 border border-slate-800/80 rounded-2xl p-6 text-left mb-10 shadow-xl backdrop-blur-md">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-indigo-400"></i> System Update Progress
+                </h3>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                        <span>Upgrading employee database queries and leave-tracking performance.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                        <span>Applying end-to-end security patches for payroll and personnel records.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                        <span>All systems will resume standard operations shortly. Thank you for your cooperation.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://syntax.pro.et" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-indigo-600/25 hover:scale-[1.02] active:scale-[0.98]">
+                    <span>Visit Syntax Tech</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+                <button onclick="window.location.reload();" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white font-semibold px-6 py-3.5 rounded-xl border border-slate-800 transition-all">
+                    <i class="fa-solid fa-rotate-right text-xs"></i>
+                    <span>Refresh Portal</span>
+                </button>
+            </div>
+
+            <p class="text-xs text-slate-500 mt-6">
+                Need corporate escalation or technical support? Contact us via <a href="https://syntax.pro.et" target="_blank" class="text-indigo-400 underline hover:text-indigo-300">syntax.pro.et</a>.
+            </p>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 px-6 text-center text-xs text-slate-600 border-t border-slate-900 z-10 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>&copy; 2026 Enterprise HRMS ERP. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+            Engineered with <i class="fa-solid fa-heart text-indigo-500 text-[10px]"></i> via 
+            <a href="https://syntax.pro.et" target="_blank" class="text-slate-400 hover:text-indigo-400 font-medium transition-colors">Syntax Tech Solutions</a>
+        </p>
+    </footer>
+
+</body>
+</html>
